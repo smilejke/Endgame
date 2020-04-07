@@ -1,0 +1,74 @@
+#footer-class {
+    min-width: 500px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url('../images/4.png');
+    color: #fff;
+    text-align: center;
+}
+
+#footer-class p {
+	text-transform: uppercase;
+}
+
+.widget-social {
+	font-size: 30px;
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.emptyBox {
+    min-width: 500px;
+    height: 60px;
+    background-image: url('../images/5.png');
+}
+
+.lastBox {
+    background-image: url('../images/4.png');
+    width: 100%;
+    min-width: 500px;
+    font-family: Roboto Mono,Arial,monospace;
+    font-weight: 900;
+    font-size: 8px;
+    line-height: 1.6;
+}
+
+.lastBox p {
+    margin: 0 20% 0 20%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.lastBox img {
+    width: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.lastBox2 {
+    background-image: url('../images/4.png');
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+.lastBox2 ul li {
+    font-family: Roboto Mono,Arial,monospace;
+    font-weight: 900;
+    font-size: 7px;
+    line-height: 1.4;
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 0.7em;
+}
+
+.lastBox2 li:hover {
+    text-shadow: 3px 3px 9px #fff;
+}
+
+.lastBox2 a {
+    text-decoration: none;
+    color: #fff;
+}

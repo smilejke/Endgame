@@ -1,0 +1,361 @@
+@font-face {
+  font-family: 'Avenger';
+  src: url("../fonts/AVENGEANCE\ HEROIC\ AVENGER.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  height: 100%;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  background-image: url('../images/white-stripes-font.png');
+}
+
+.carouselMain {
+  width: 100%;
+  margin: 0 auto 10px auto;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  background-image: url('../images/1.png');
+}
+
+.container {
+  width: 55%;
+  min-width: 400px;
+}
+
+.category-box {
+  width: 40%;
+  min-width: 550px;
+  height: 45px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #2d3436;
+  color: #fff;
+  text-shadow: 1px 0px 1px whitesmoke;
+  margin: 10px 0 30px 0;
+  border-radius: 0 20px 20px 0;
+  font-family: 'Play', sans-serif;
+  font-size: 20px;
+  border: 2px solid black;
+  border-left: none;
+  }
+
+.category-box p {
+  padding: 20px 70px 0 0;
+}
+
+.scrollButton {
+  position: fixed;
+  bottom: 80px;
+  right: 50px;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #3498db;
+  color: #f1f1f1;
+  font-size:30px;
+  transition: all 0.2s ease;
+}
+
+.scrollButton:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width:768px){
+  .carouselMain , .newsCarousel-body {
+    display: none;
+  }
+  #not_today {
+    display: none;
+  }
+  .category-box {
+    width:100%;
+    min-width: 400px;
+    border-radius: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+  .category-box:first-of-type {
+    margin-top: 10px;
+  }
+  .category-box p {
+    padding: 20px 0 0 0;
+  }
+  .merch{
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .merch img {
+    margin: 20px;
+    width: 100%;
+
+  }
+  .merch_description {
+    margin-top: 50px;
+  }
+}
+
+.slideshow-container {
+  width: 60%;
+  position: relative;
+  margin: auto;
+}
+  
+.slideshow-container img{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+  
+.mySlides {
+  display: none;
+}
+  
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #fff !important;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0,0,0,0.5);
+}
+  
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+  
+.carousel-news-text a {
+  text-decoration: none !important;
+  color: #f2f2f2;
+  font-size: 17px;
+  padding: 12px 12px 5px 12px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-family: 'montserrat',sans-serif;
+  font-weight: 500;
+}
+  
+.carousel-news-text a:hover {
+  color: orange;
+}
+  
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+  
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+  
+.acctive, .dot:hover {
+  background-color: #717171;
+}
+  
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.fade:not(.show) {
+  opacity: 1;
+}
+.centerDot {
+  text-align: center;
+}
+
+.media img {
+  width: 64px;
+  height: 64px;
+}
+.jumbotron {
+  text-align: center;
+  padding: 10px;
+}
+
+.jumbotron h1 {
+  font-family: 'Play', sans-serif;
+  text-shadow: 0px 1px 2px darkslategray;
+  font-size: 2em;
+}
+
+.jumbotron p {
+  font-weight: 300;
+}
+
+.jumbotron a {
+  text-decoration: none;
+  font-size: 1.4em;
+  transition: all 0.2s ease;
+  font-family: 'montserrat',sans-serif;
+  color: black;
+}
+
+.jumbotron a:hover {
+  text-decoration: underline;
+  letter-spacing: 2px;
+}
+
+.jumbotron img {
+  width: 60%;
+  min-width: 350px;
+  margin: 20px 0 20px 0;
+  border: 2px solid rgba(0,0,0,0.3);
+  transition: border 1s ease;
+}
+
+.jumbotron img::before {
+	background: rgba(0,0,0,.2);
+	transform: translate(-50%, -50%);
+	opacity: 0;
+}
+.jumbotron img:hover{
+  animation: shine ease-in-out 1s forwards;
+  border: 2px solid rgba(0,0,0,1);
+}
+@keyframes shine {
+	0% {
+		filter: grayscale(1);
+  }
+  25%{
+    filter: grayscale(.75);
+  }
+	50% {
+		filter: grayscale(.5);
+  }
+  75% {
+		filter: grayscale(.25);
+	}
+	100% {
+		filter: grayscale(0);
+	}
+}
+
+.games {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  margin: 0 100px;
+}
+
+.games a {
+  text-decoration: none;
+  color: #000;
+}
+
+.games > div {
+  width: 180px;
+  height: 220px;
+  margin: 30px 15px 60px 15px;
+  text-align: center;
+}
+
+.games > div img {
+  width: 180px;
+  height: 220px;
+}
+
+.elements_name {
+  text-align: center;
+  font-size: 0.9em;
+  font-weight: 600;
+  padding-top: 5px;
+}
+
+.elements_date {
+  color: gray;
+  font-size: 0.8em;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.game-box a:hover {
+  color: red;
+}
+
+.elements_name, .elements_date {
+  font-family: 'Play', sans-serif;
+}
+
+.jump,.elements_name, .elements_date {
+  transition: all 0.2s linear;
+}
+
+.game-box a:hover .jump {
+  transform: translateY(-15px);
+}
+
+.merch {
+  display: flex;
+  min-width: 550px;
+}
+
+.merch_description {
+  text-align: justify;
+  margin: 10px 50px;
+  font-family: 'montserrat',sans-serif;
+  font-weight: 300;
+}
+
+.merch_description p span {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: .5px .5px 1px darkolivegreen;
+}
+
+.merch img {
+  width: 400px;
+  max-width: 300px;
+  height: 400px;
+  max-height: 300px;
+  margin: 10px 0px 10px 20px;
+}
+
+.merch_description a {
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  font-size: 1.1em;
+  text-shadow: .5px .5px 1px darkolivegreen;
+}
+
+.merch_description a:hover {
+  letter-spacing: 0.2em;
+}

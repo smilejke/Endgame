@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+.scrollButton {
+    position: fixed;
+    bottom: 80px;
+    right: 50px;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #3498db;
+    color: #f1f1f1;
+    font-size:30px;
+    transition: all 0.2s ease;
+  }
+  
+  .scrollButton:hover {
+    opacity: 1;
+  }
+
+.card_direction {
+    margin: 20px 20px 20px 25px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.hidden_1, .hidden_2, .hidden_3 {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+/* .hide_me{
+    display: none;
+} */
+.card {
+    margin-right: 30px;
+    margin-bottom: 20px;
+    width: 18rem;
+    border: 3px solid #b2bec3;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card:hover {
+    border: 3px solid #ff4757;
+    text-shadow: 2px 2px 4px #bdc3c7;
+}
+
+.card h5 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    color:#2d3436;
+}
+
+.card p {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    color:#353b48;
+}
+
+.moveBottom {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.sm {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.sm a {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    color: #2c3e50;
+    font-size: 18px;
+    transition: 0.4s;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.sm a:hover {
+    background: #2c3e50;
+    color: #fff;
+}
+
+@media screen and (max-width:800px){
+    .card_direction {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+}
+
+.tracklist-center {
+    text-align: center;
+}
+
+.tracklist-center a {
+    text-decoration: none;
+    font-family: Poppins, sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #000;
+    opacity: 0.8;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.tracklist-center a:hover {
+    opacity: 1;
+    letter-spacing: 0.4em;
+}
+

@@ -1,0 +1,278 @@
+@font-face {
+  font-family: 'Avenger';
+  src: url("../fonts/AVENGEANCE\ HEROIC\ AVENGER.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.container {
+  min-width: 400px;
+}
+
+.background-this-container {
+  background-image: url('../images/1.png');
+}
+
+.carouselFilms {
+  width: 50%;
+  margin: 10px auto 20px auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.carouselFilms img {
+  max-width: 1000px;
+  min-width: 400px;
+  min-height: 200px;
+}
+main {
+  background-image: url('../images/white-stripes-font.png');
+}
+.category-box {
+  width: 40%;
+  min-width: 550px;
+  height: 45px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #2d3436;
+  color: #fff;
+  margin: 15px 0 30px 0;
+  border-radius: 0 20px 20px 0;
+  font-family: 'Avenger', sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.5em;
+  border: 2px solid black;
+  border-left: none;
+}
+
+.category-box a {
+  padding: 20px 70px 0 0;
+}
+
+.newsCarousel-body {
+  background-image: url('../images/white-stripes-font.png');
+}
+
+.leftimg img {
+  height: 250px;
+  widows: 400px;
+  margin: 0 0 10px 50px;
+}
+
+@media screen and (max-width:768px){
+  .newsCarousel-body, .background-this-container {
+    display: none;
+  }
+  .category-box {
+    width:100%;
+    border-radius: 0px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .category-box p {
+    padding-left: 50px;
+  }
+  .category-box:first-of-type {
+    margin-top: 10px;
+  }
+  .film-container{
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+  }
+}
+
+.slideshow-container {
+  width: 60%;
+  position: relative;
+  margin: auto;
+  
+}
+
+.slideshow-container img{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #fff !important;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.carousel-news-text a {
+  text-decoration: none !important;
+  color: #f2f2f2;
+  font-size: 17px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: 'montserrat',sans-serif;
+  font-weight: 500;
+}
+
+.carousel-news-text a:hover {
+  color: orange;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-bottom: 20px;
+}
+
+.acctive, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+.fade:not(.show) {
+  opacity: 1;
+}
+
+.centerDot {
+  text-align: center;
+}
+
+
+.film-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  min-width: 400px;
+  background-image: url('../images/white-stripes-font.png');
+}
+
+.elements_image img {
+  width: 100%;
+  height: 100%;
+  overflow:hidden;
+}
+
+.elements_image {
+  width: 220px;
+  height: 320px;
+  position: relative;
+  margin: 10px 50px 100px 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  transition: all 0.2s ease;
+}
+
+.elements_image a:hover {
+  text-decoration: none !important;
+}
+
+.elements_image:hover {
+  transform: scale(1.06);
+  border: 3px solid #ff4757;
+}
+
+.elements_image:hover .elements_name {
+  color: #eb2f06;
+}
+
+.elements_image:hover .elements_discription {
+  font-weight: bold;
+}
+
+.elements_name {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 18px;
+  font-size: 16px;
+  color: #000;
+  text-align: center;
+  transition: 0.2s ease;
+}
+
+.elements_discription {
+  display: block;
+  line-height: 15px;
+  font-size: 9px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+}
+
+.scrollButton {
+  position: fixed;
+  bottom: 80px;
+  right: 50px;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #3498db;
+  color: #f1f1f1;
+  font-size:30px;
+  transition: all 0.2s ease;
+}
+
+.scrollButton:hover {
+  opacity: 1;
+}
+
+.filmBoxSizing {
+  width: 100%;
+  min-width: 400px;
+}
+

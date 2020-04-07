@@ -1,0 +1,135 @@
+.news {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 80px;
+    padding-top: 0px !important;
+}
+
+.card {
+    position: relative;
+    margin: 30px;
+    background-color: transparent;
+    width: 320px;
+    min-width: 320px;
+    height: 340px;
+    min-height: 340px;
+    border-radius: 3%;
+    border: 2px solid #1e90ff;
+    cursor: default;
+}
+
+.card:hover {
+    border: none;
+}
+
+.front, .back {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform .6s linear;
+    border-radius: 3%;
+}
+
+.front img {
+    width: 100%;
+    height: 80%;
+}
+
+.front .description {
+    height: 20%;
+}
+
+.description {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 5px;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Play', sans-serif;
+    font-size: 0.9em;
+}
+
+.front {
+    display: flex;
+    flex-direction: column;
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.back {
+    background: #f1f1f1;
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.back-content {
+    font-family: 'Play', sans-serif;
+    color: #2c3e50;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.back-content h2 {
+    font-size: 1.5em;
+    color: #1e90ff;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.card:hover > .front {
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.card:hover > .back {
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.see_more  {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+}
+
+.see_more a {
+    text-decoration: none;
+    opacity: 0.6;
+    font-size: 1em;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.1s linear;
+    text-shadow: .5px .5px 1px darkolivegreen;
+}
+
+.see_more a:hover {
+    opacity: 1;
+    letter-spacing: 0.1em;
+}
+
+.scrollButton {
+    position: fixed;
+    bottom: 80px;
+    right: 50px;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #3498db;
+    color: #f1f1f1;
+    font-size:30px;
+    transition: all 0.2s ease;
+}
+  
+.scrollButton:hover {
+    opacity: 1;
+}
+

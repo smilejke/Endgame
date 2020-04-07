@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'Avenger';
+  src: url("../fonts/AVENGEANCE\ HEROIC\ AVENGER.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+.container1, .container2, .container3 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-width: 500px;
+}
+
+.container1 {
+  padding-top: 15px;
+}
+
+@media screen and (max-width: 780px){
+  .middle-text{
+    display: none;
+}
+  .container1, .container2, .container3{
+    display: flex;
+    align-content: center;
+    flex-flow: column wrap;
+  }
+}
+
+figure::before {
+	background: rgba(0,0,0,.2);
+	transform: translate(-50%, -50%);
+	opacity: 0;
+}
+figure:hover{
+  animation: bloom ease-in-out .55s forwards;
+}
+@keyframes bloom {
+	0% {
+		filter: grayscale(1);
+	}
+	40% {
+		filter: grayscale(.5);
+	}
+	100% {
+		filter: grayscale(0);
+	}
+}
+
+.elements_name {
+  font-family: 'Play', sans-serif;
+  font-weight: bold;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  line-height: 18px;
+  font-size: 16px;
+  color: #000;
+  transition: 0.2s ease;
+}
+
+.container1 a, .container2 a, .container3 a {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 171px;
+  margin: 0 8px;
+  text-decoration: none !important;
+  text-align: center;
+}
+
+.container1 a:hover, .container2 a:hover, .container3 a:hover {
+  letter-spacing: 0.1em;
+}
+
+
+.elements_image {
+  width: 171px;
+  height: 190px;
+  position: relative;
+}
+
+.scrollButton {
+  position: fixed;
+  bottom: 80px;
+  right: 50px;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #3498db;
+  color: #f1f1f1;
+  font-size:30px;
+  transition: all 0.2s ease;
+}
+
+.scrollButton:hover {
+  opacity: 1;
+}
+
+main {
+  width: 70%;
+  background-color: rgb(226,226,226,.5);
+  margin: 30px auto;
+  min-width: 500px;
+}
+
+main h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'montserrat', sans-serif;
+  letter-spacing: 5px;
+  font-size: 2.5em;
+  padding-top: 15px;
+}
+
+ 
